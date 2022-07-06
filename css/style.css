@@ -8,16 +8,6 @@
   flex-direction: column;
 }
 
-@media (min-width: 600px) {
-  .card {
-      flex-direction: row;
-  }
-
-  .card-img {
-    height: 300px;
-  }
-}
-
 /* min-width and min-height 0 fixing bug chromium browsers using img and flex-basis */
 .card-img {
   object-fit: cover;
@@ -75,4 +65,32 @@
   font-weight: 700;
   display: block;
   font-size: 1.25em;
+}
+
+@media (min-width: 600px) {
+  .card {
+      flex-direction: row;
+  }
+
+  .card-img {
+    height: 300px;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 2.25rem;
+  }
+
+  .card-body {
+    font-size: 1.125rem;
+    max-width: 500px;
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
 }
