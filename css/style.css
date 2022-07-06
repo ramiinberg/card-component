@@ -8,9 +8,26 @@
   flex-direction: column;
 }
 
+@media (min-width: 600px) {
+  .card {
+      flex-direction: row;
+  }
+
+  .card-img {
+    height: 300px;
+  }
+}
+
+/* min-width and min-height 0 fixing bug chromium browsers using img and flex-basis */
 .card-img {
   object-fit: cover;
-  height: 150px;
+  flex-basis: 200px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.card-content {
+  padding: 1em;
 }
 
 .card-title,
@@ -38,6 +55,16 @@
   margin-top: 3em;
 }
 
+.card-btn {
+  font-size: 1.25rem;
+  text-decoration: none;
+  background-color: #05cbe9;
+  color:#111d4a;
+  padding: .35em 1em;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
 .card-read-time {
   margin: 0;
   opacity: .6;
@@ -49,18 +76,3 @@
   display: block;
   font-size: 1.25em;
 }
-
-.card-btn {
-  font-size: 1.25rem;
-  text-decoration: none;
-  background-color: #05cbe9;
-  color:#111d4a;
-  padding: .35em 1em;
-  letter-spacing: 1px;
-  font-weight: 700;
-}
-
-.card-content {
-  padding: 1em;
-}
-
