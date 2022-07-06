@@ -7,6 +7,8 @@ html, body {
   width: 90%;
   margin: 0 auto;
   max-width: 800px;
+  background: #111d4a;
+  color: white;
 }
 
 .card-title,
@@ -27,4 +29,18 @@ html, body {
 
 .card-btn {
   font-size: 1.25rem;
+  text-decoration: none;
+  background-color: #05cbe9;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
